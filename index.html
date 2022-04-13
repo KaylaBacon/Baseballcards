@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Baseball Cards" Kayla Bacon DGM1600</title>
+    <script type="module" src="js/script.js"></script>
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pokemon Cards</h1>
+        <p>All of the Original Pokemon!</p>
+        <button id="add-button">Add Card</button>
+
+        <form id="add-form" class="is-hidden">
+            <label>Name <input required name="species" /></label>
+            <label>Dex No. <input required name="dex" type="number" min="152" /></label>
+            <label>Type <select required name="type1">
+            
+                    <option class="pokemons" value="">--Please choose--</option>
+                    <option value="bug">Bug</option>
+                    <option value="dark">Dark</option>
+                    <option value="dragon">Dragon</option>
+                    <option value="electric">Electric</option>
+                    <option value="fairy">Fairy</option>
+                    <option value="fighting">Fighting</option>
+                    <option value="fire">Fire</option>
+                    <option value="flying">Flying</option>
+                    <option value="ghost">Ghost</option>
+                    <option value="grass">Grass</option>
+                    <option value="ground">Ground</option>
+                    <option value="ice">Ice</option>
+                    <option value="normal">Normal</option>
+                    <option value="poison">Poison</option>
+                    <option value="psychic">Psychic</option>
+                    <option value="rock">Rock</option>
+                    <option value="steel">Steel</option>
+                    <option value="water">Water</option>
+                </select></label>
+            <label>Type <select name="type2">
+                    <option value="">--Please choose an option--</option>
+                    <option value="bug">Bug</option>
+                    <option value="dark">Dark</option>
+                    <option value="dragon">Dragon</option>
+                    <option value="electric">Electric</option>
+                    <option value="fairy">Fairy</option>
+                    <option value="fighting">Fighting</option>
+                    <option value="fire">Fire</option>
+                    <option value="flying">Flying</option>
+                    <option value="ghost">Ghost</option>
+                    <option value="grass">Grass</option>
+                    <option value="ground">Ground</option>
+                    <option value="ice">Ice</option>
+                    <option value="normal">Normal</option>
+                    <option value="poison">Poison</option>
+                    <option value="psychic">Psychic</option>
+                    <option value="rock">Rock</option>
+                    <option value="steel">Steel</option>
+                    <option value="water">Water</option>
+
+                </select></label>
+
+            <input type="submit">
+        </form>
+
+
+            <div id="cards">
+
+            </div>
+    </div>
+
+    <footer class="container"><button id="top">&uarr;</button></footer>
+
+
+    
+</body>
+
+</html>
