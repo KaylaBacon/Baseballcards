@@ -1,0 +1,134 @@
+body {
+    background: pink;
+    color: white;
+    font-family: 'Akshar', sans-serif;
+    margin-bottom: 0;
+  }
+
+#add-button{
+    background-color: palevioletred;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+label{
+    background-color: lightpink;
+    font-size: 20px;
+    padding: 7px;
+}
+
+
+
+  h1 {
+      font-size: 50px;
+      line-height: 50px;
+      margin-bottom: 5px;
+  }
+  p {
+      font-size: 25px;
+  }
+  
+  .card {
+    width: 300px;
+    height: 300px;
+    float: left;
+    perspective: 500px;
+    margin-bottom: 20px; 
+  }
+  
+  .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  .card.is-flipped .content {
+    transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+    color: deeppink;
+    font-size: 40px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+  }
+ 
+  .front {
+    background-image: url('/assets/pokeball.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: white;
+    text-align: center;
+
+  }
+
+  .fact {
+    padding: 20px;
+  }
+
+  .back {
+    background: grey;
+    font-size: 30px;
+    color: white;
+    transform: rotateY( 180deg );
+  }
+
+  .back.loaded {
+    background-color: palevioletred;
+  }
+
+  .is-hidden {
+      display: none;
+  }
+
+  .dex {
+      text-align: center;
+      padding: 15px;
+  }
+
+  .front .dex {
+    color: lightpink;
+    background-color: palevioletred;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+  }
+
+  #cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      max-width: 1000px;
+      justify-items: stretch;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  #top {
+      font-size: 40px;
+      min-width: 50px;
+      background-color: palevioletred;
+      border: 0;
+      color: lightpink;
+    }
